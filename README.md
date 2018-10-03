@@ -48,12 +48,12 @@ You can adjust update<i></i>.sh and build your own image
 
 * build image
 ```
-$ docker build -t <your_register_id>/<repository_name>
+$ docker build -t <your_registry_id>/<repository_name>
 ```
 
 * publish image to registry e.g. dockerhub
 ```
-$ docker push <your_register_id>/<repository_name>
+$ docker push <your_registry_id>/<repository_name>
 ```
 
 * Change .drone.yml deploy image to your own
@@ -62,7 +62,7 @@ $ docker push <your_register_id>/<repository_name>
 # .drone.yml
 
 deploy:
-    image: <your_register_id>/<repository_name>
+    image: <your_registry_id>/<repository_name>
     pull: true # force to refresh image
     ...
 ```
