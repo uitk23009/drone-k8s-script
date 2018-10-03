@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # echo current execute command and add new line
-exen() { echo -e "${@/eval/}\n" ; "$@" ; }
+exen() { echo -e "${@/eval /}\n" ; "$@" ; }
 
 if [ -z ${PLUGIN_KUBERNETES_USER} ]; then
   PLUGIN_KUBERNETES_USER="default"
