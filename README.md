@@ -15,7 +15,6 @@ Add your config to .drone.yml
       - kubectl -n default apply -f test-service.yaml
       - kubectl get all
     secrets: [kubernetes_server, kubernetes_cert, kubernetes_token]
-
 ```
 
 Using kubesec.sh to get KUBERNETES_SERVER, KUBERNETES_CERT, KUBERNETES_TOKEN
@@ -35,13 +34,11 @@ Using kubesec.sh to add KUBERNETES_SERVER, KUBERNETES_CERT, KUBERNETES_TOKEN
 
 exe eval "export DRONE_SERVER=https://<drone-server>"
 exen eval "export DRONE_TOKEN=your_token"
-
 ```
 
 2. Execute kubesec<i></i>.sh
 ```
 $ bash kubesec.sh add -d username@hostip -i uitk23009/drone-k8s-script -r uitk23009/test-repository
-
 ```
 
 
