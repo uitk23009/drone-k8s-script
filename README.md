@@ -8,7 +8,7 @@ Add your config to .drone.yml
 
 ```yaml
   deploy:
-    image: uitk23009/drone-k8s-script
+    image: uitk23009/drone-kubernetes-script
     pull: true # force to refresh image
     kubernetes_cmd:
       - kubectl -n default apply -f test-deployment.yaml
@@ -38,7 +38,7 @@ exen eval "export DRONE_TOKEN=your_token"
 
 2. Execute kubesec<i></i>.sh
 ```
-$ bash kubesec.sh add -d username@hostip -i uitk23009/drone-k8s-script -r uitk23009/test-repository
+$ bash kubesec.sh add -d username@hostip -i uitk23009/drone-kubernetes-script -r uitk23009/test-repository
 ```
 
 
